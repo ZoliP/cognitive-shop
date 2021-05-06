@@ -1,0 +1,112 @@
+{
+"UserList":
+    [
+        {
+            "id": 1,
+            "email": "user123@yahoo.com",
+            "password" : "user123" 
+        },
+        {
+            "id": 2,
+            "email": "user456@yahoo.com",
+            "password" : "user456" 
+        },
+        {
+            "id": 3,
+            "email": "pallozoli@yahoo.com",
+            "password" : "pallozoli" 
+        }
+    ],
+
+"ProductList":
+[
+    {
+        "id": 1,
+        "destination": "cars",
+        "make": "Pirelli",
+        "type": "P Zero",
+        "width": "205",
+        "profile": "55",
+        "rimSize": "R16",
+        "speedIndex": "82",
+        "loadIndex": "T",
+        "season": "summer",
+        "fuelIndex": "G",
+        "weatherIndex": "E",
+        "noisIndex": "73",
+        "stock": "30",
+        "price": "475",
+        "reducedPrice": "375"
+    },
+    {
+        "id": 2,
+        "destination": "cars",
+        "make": "Pirelli",
+        "type": "P Zero",
+        "width": "195",
+        "profile": "65",
+        "rimSize": "R15",
+        "speedIndex": "81",
+        "loadIndex": "T",
+        "season": "summer",
+        "fuelIndex": "G",
+        "weatherIndex": "E",
+        "noisIndex": "73",
+        "stock": "20",
+        "price": "375",
+        "reducedPrice": "325"
+    },
+    {
+        "id": 3,
+        "destination": "cars",
+        "make": "Pirelli",
+        "type": "P Zero",
+        "width": "205",
+        "profile": "55",
+        "rimSize": "R16",
+        "speedIndex": "82",
+        "loadIndex": "T",
+        "season": "summer",
+        "fuelIndex": "G",
+        "weatherIndex": "E",
+        "noisIndex": "73",
+        "stock": "30",
+        "price": "475",
+        "reducedPrice": "400"
+    }
+],
+
+"Cart":
+[
+    {
+        "id": 1,
+        "userID": 1,
+        "productID": 3,
+        "quantity": 4,
+        "unitPriceExclVAT":  322.58,   
+        "VATAmount": 309.67,
+        "totalPriceWhitoutVAT": 1290.33,
+        "totalPriceWhithVAT": 1600.00
+    },
+    {
+        "id": 2,
+        "userID": 1,
+        "productID": 3,
+        "quantity": 4,
+        "unitPriceExclVAT":  322.58,   
+        "VATAmount": 309.67,
+        "totalPriceWhitoutVAT": 1290.33,
+        "totalPriceWhithVAT": 1600.00
+    },
+    {
+        "id": 3,
+        "userID": 1,
+        "productID": 3,
+        "quantity": 4,
+        "unitPriceExclVAT":  322.58,   
+        "VATAmount": 309.67,
+        "totalPriceWhitoutVAT": 1290.33,
+        "totalPriceWhithVAT": 1600.00
+    }
+]    
+}

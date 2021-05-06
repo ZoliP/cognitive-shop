@@ -1,0 +1,16 @@
+#searchLogo {
+  padding: 6px;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.fa-angle-down {
+  color: #5499f7;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #212121 !important;
+}
