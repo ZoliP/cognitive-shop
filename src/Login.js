@@ -5,6 +5,8 @@ import "./Login.css";
 class Login extends Component {
   render() {
     const { UserList } = this.props;
+    let email = "";
+    const userFound = false;
     console.log("the users", { UserList });
     return (
       <div className="login">
@@ -13,39 +15,57 @@ class Login extends Component {
           <form className="loginBox">
             <div className="form-group">
               <h3 className="h3">Welcome!</h3>
-              <label className="emailInput">
-                Please fill in your email address
-              </label>
-              <input
-                type="email"
-                className="form-control"
-                id="email"
-                aria-describedby="emailHelp"
-                required
-              ></input>
-              {/* <label type="hidden" className="nameInput">
-                Please fill in your name
-              </label>
-              <input
-                type="hidden"
-                className="form-control"
-                id="name"
-                required
-              ></input>
-              <label className="password">Password:</label>
-              <input
-                type="hidden"
-                className="form-control"
-                id="password"
-                required
-              ></input>
-              <label className="password">Confirm password:</label>
-              <input
-                type="hidden"
-                className="form-control"
-                id="passwordConfirm"
-                required
-              ></input> */}
+              {!email && (
+                <>
+                  <label className="emailInput">
+                    Please fill in your email address
+                  </label>
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="email"
+                    required
+                  ></input>
+                </>
+              )}
+              {!userFound && email && (
+                <>
+                  <label type="hidden" className="nameInput">
+                    Please fill in your name
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="name"
+                    required
+                  ></input>
+                  <label className="password">Password:</label>
+                  <input
+                    type="password"
+                    className="form-control"
+                    id="password"
+                    required
+                  ></input>
+                  <label className="password">Confirm password:</label>
+                  <input
+                    type="password"
+                    className="form-control"
+                    id="passwordConfirm"
+                    required
+                  ></input>
+                </>
+              )}
+              {userFound && email && (
+                <>
+                  <label className="password">Password:</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="password"
+                    required
+                  ></input>
+                </>
+              )}
               <br />
               <button type="submit" className="btn btn-primary btn-block">
                 Continue

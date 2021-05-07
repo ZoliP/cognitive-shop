@@ -1,5 +1,14 @@
+.search {
+  padding-top: 64px;
+}
+
 #searchLogo {
   padding: 6px;
+}
+
+#button-search,
+#button-checkout {
+  background-color: #418ef6;
 }
 
 .dropdown-toggle::after {

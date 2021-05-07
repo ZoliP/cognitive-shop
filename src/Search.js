@@ -10,8 +10,8 @@ class Search extends Component {
     const { ProductList } = this.props;
     console.log({ ProductList });
     return (
-      <div className="container">
-        <nav className="navbar navbar-expand-lg navbar-light bg-white ">
+      <div className="container search">
+        <nav className="navbar navbar-expand-lg navbar-light bg-white">
           <a className="navbar-brand" href="#">
             <img
               id="searchLogo"
@@ -30,12 +30,13 @@ class Search extends Component {
               type="text"
               className="form-control font-italic"
               placeholder="Search products"
+              required
             />
             <div className="input-group-append w-50">
               <button
                 className="btn btn-primary font-weight-bold"
                 type="button"
-                id="button-addon2"
+                id="button-search"
               >
                 SEARCH
               </button>
@@ -106,11 +107,11 @@ class Search extends Component {
                   Number of products:
                 </a>
                 <div className="dropdown-divider"></div>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/checkout">
                   <button
                     className="btn btn-primary"
                     type="button"
-                    id="button-addon2"
+                    id="button-checkout"
                   >
                     Checkout cart
                   </button>
