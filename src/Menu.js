@@ -27,13 +27,13 @@ class Menu extends Component {
             <ul className="navbar-nav w-100 nav-fill">
               <li className="nav-item">
                 <a className="nav-link p-0" href="cars">
-                  <div className="vehicleCard card text-center active">
+                  <div className="vehicleCard card text-center ">
                     <div className="pb-2 d-flex justify-content-center">
                       <img className="p-2" src={cars} alt="img"></img>
                     </div>
-                    <h6>
+                    <p>
                       Cars / Offroad Vehicles <br /> ATV
-                    </h6>
+                    </p>
                   </div>
                 </a>
               </li>
@@ -43,7 +43,7 @@ class Menu extends Component {
                     <div className="pb-2 d-flex justify-content-center">
                       <img className="p-2" src={trucks} alt="img"></img>
                     </div>
-                    <h6>Trucks</h6>
+                    <p>Trucks</p>
                   </div>
                 </a>
               </li>
@@ -53,7 +53,7 @@ class Menu extends Component {
                     <div className="pb-2 d-flex justify-content-center">
                       <img className="p-2" src={agriculture} alt="img"></img>
                     </div>
-                    <h6>Agriculture</h6>
+                    <p>Agriculture</p>
                   </div>
                 </a>
               </li>
@@ -63,7 +63,7 @@ class Menu extends Component {
                     <div className="pb-2 d-flex justify-content-center">
                       <img className="p-2" src={innertubes} alt="img"></img>
                     </div>
-                    <h6>Inner tubes</h6>
+                    <p>Inner tubes</p>
                   </div>
                 </a>
               </li>
@@ -73,7 +73,7 @@ class Menu extends Component {
                     <div className="pb-2 d-flex justify-content-center">
                       <img className="p-2" src={skidchains} alt="img"></img>
                     </div>
-                    <h6>Skid chains</h6>
+                    <p>Skid chains</p>
                   </div>
                 </a>
               </li>
@@ -83,7 +83,7 @@ class Menu extends Component {
                     <div className="pb-2 d-flex justify-content-center">
                       <img className="p-2" src={rims} alt="img"></img>
                     </div>
-                    <h6>Rims</h6>
+                    <p>Rims</p>
                   </div>
                 </a>
               </li>

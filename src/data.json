@@ -18,56 +18,23 @@
         }
     ],
 
-"ProductList":
+"ProductStock":
 [
-    {
-        "id": 1,
-        "category": "cars",
-        "make": "Pirelli",
-        "type": "P Zero",
-        "size": "205/55/R16",
-        "speedIndex": "82",
-        "loadIndex": "T",
-        "season": "summer",
-        "fuelIndex": "G",
-        "weatherIndex": "E",
-        "noisIndex": "73",
-        "stock": "30",
-        "price": "475",
-        "reducedPrice": "375"
-    },
-    {
-        "id": 2,
-        "category": "cars",
-        "make": "Pirelli",
-        "type": "P Zero",
-        "size": "195/65/R15",
-        "speedIndex": "81",
-        "loadIndex": "T",
-        "season": "summer",
-        "fuelIndex": "G",
-        "weatherIndex": "E",
-        "noisIndex": "73",
-        "stock": "20",
-        "price": "375",
-        "reducedPrice": "325"
-    },
-    {
-        "id": 3,
-        "category": "cars",
-        "make": "Pirelli",
-        "type": "P Zero",
-        "size": "205/55/R16",
-        "speedIndex": "82",
-        "loadIndex": "T",
-        "season": "summer",
-        "fuelIndex": "G",
-        "weatherIndex": "E",
-        "noisIndex": "73",
-        "stock": "30",
-        "price": "475",
-        "reducedPrice": "400"
-    }
+    {"id": 1,"category": "cars","make": "Pirelli","type": "P Zero","size": "205/55/R16","speedIndex": "82","loadIndex": "T","season": "summer","fuelIndex": "G","weatherIndex": "E","noisIndex": "73","stock": "15","price": "475","reducedPrice": "375"},
+    {"id": 2,"category": "cars","make": "Pirelli","type": "P Zero", "size": "195/65/R15","speedIndex": "81","loadIndex": "T","season": "summer","fuelIndex": "G","weatherIndex": "E","noisIndex": "73","stock": "22","price": "375","reducedPrice": "325"},
+    {"id": 3,"category": "cars","make": "Pirelli","type": "P Zero","size": "205/55/R16","speedIndex": "82","loadIndex": "T","season": "summer","fuelIndex": "G","weatherIndex": "E","noisIndex": "73","stock": "0","price": "475","reducedPrice": "400"},
+    {"id":4,"category":"cars","make":"Michelin","type":"Energy", "size":"195/65/R15","speedIndex":"81","loadIndex":"T","season":"summer","fuelIndex":"G","weatherIndex":"E","noisIndex": "73","stock": "18","price": "375","reducedPrice": "325"},
+    {"id":5,"category":"cars","make":"Michelin","type":"Energy", "size":"185/55/R15","speedIndex":"81","loadIndex":"T","season":"summer","fuelIndex":"G","weatherIndex":"E","noisIndex": "73","stock": "24","price": "375","reducedPrice": "325"},
+    {"id":6,"category":"cars","make":"Michelin","type":"Energy", "size":"205/65/R16","speedIndex":"81","loadIndex":"T","season":"summer","fuelIndex":"G","weatherIndex":"E","noisIndex": "73","stock": "36","price": "375","reducedPrice": "325"},
+    {"id":7,"category":"cars","make":"Hankook","type":"Hook", "size":"195/65/R15","speedIndex":"81","loadIndex":"T","season":"summer","fuelIndex":"G","weatherIndex":"E","noisIndex": "73","stock": "4","price": "375","reducedPrice": "325"},
+    {"id":8,"category":"cars","make":"Hankook","type":"Hook", "size":"205/55/R16","speedIndex":"81","loadIndex":"T","season":"summer","fuelIndex":"G","weatherIndex":"E","noisIndex": "73","stock": "8","price": "375","reducedPrice": "325"},
+    {"id":9,"category":"cars","make":"Hankook","type":"Hook", "size":"195/55/R15","speedIndex":"81","loadIndex":"T","season":"summer","fuelIndex":"G","weatherIndex":"E","noisIndex": "73","stock": "12","price": "375","reducedPrice": "325"},
+    {"id":10,"category":"trucks","make":"Michelin","type":"Energy", "size":"195/65/R15","speedIndex":"81","loadIndex":"T","season":"summer","fuelIndex":"G","weatherIndex":"E","noisIndex": "73","stock": "45","price": "375","reducedPrice": "325"},
+    {"id":11,"category":"trucks","make":"Michelin","type":"Energy", "size":"185/55/R15","speedIndex":"81","loadIndex":"T","season":"summer","fuelIndex":"G","weatherIndex":"E","noisIndex": "73","stock": "53","price": "375","reducedPrice": "325"},
+    {"id":12,"category":"trucks","make":"Michelin","type":"Energy", "size":"205/65/R16","speedIndex":"81","loadIndex":"T","season":"summer","fuelIndex":"G","weatherIndex":"E","noisIndex": "73","stock": "11","price": "375","reducedPrice": "325"},
+    {"id":13,"category":"trucks","make":"Hankook","type":"Hook", "size":"195/65/R15","speedIndex":"81","loadIndex":"T","season":"summer","fuelIndex":"G","weatherIndex":"E","noisIndex": "73","stock": "5","price": "375","reducedPrice": "325"},
+    {"id":14,"category":"trucks","make":"Hankook","type":"Hook", "size":"205/55/R16","speedIndex":"81","loadIndex":"T","season":"summer","fuelIndex":"G","weatherIndex":"E","noisIndex": "73","stock": "7","price": "375","reducedPrice": "325"},
+    {"id":15,"category":"trucks","make":"Hankook","type":"Hook", "size":"195/55/R15","speedIndex":"81","loadIndex":"T","season":"summer","fuelIndex":"G","weatherIndex":"E","noisIndex": "73","stock": "9","price": "375","reducedPrice": "325"}
 ],
 
 "Cart":

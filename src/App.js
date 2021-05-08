@@ -2,8 +2,10 @@ import React, { Component } from "react";
 //import { Route, Switch } from "react-router-dom";
 import Login from "./Login";
 import Header from "./Header";
-import ProductCard from "./ProductCard";
+import ProductList from "./ProductList";
 import Menu from "./Menu";
+import SidebarMenu from "./SidebarMenu";
+import Footer from "./Footer";
 import Data from "./data";
 import "./App.css";
 
@@ -16,13 +18,15 @@ class App extends Component {
   }
   state = {};
   render() {
-    const { UserList, ProductList } = this.state.Data;
+    const { UserList, ProductStock } = this.state.Data;
     return (
       <div>
-        <Login UserList={UserList} />
+        {/* <Login UserList={UserList} /> */}
         <Header ProductList={ProductList} />
         <Menu ProductList={ProductList} />
-        <ProductCard ProductList={ProductList} />
+        <SidebarMenu ProductStock={ProductStock} />
+        {/* <ProductList ProductStock={ProductStock} /> */}
+        <Footer />
       </div>
     );
   }

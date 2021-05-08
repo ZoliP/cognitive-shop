@@ -17,7 +17,7 @@ class Header extends Component {
             <p className="lead text-white">
               Tires for cars, trucks, vans and agricultural vehicles
             </p>
-            <div class="d-flex justify-content-between col-3 p-0">
+            <div className="d-flex justify-content-between col-3 p-0">
               <h6 className="make display-4 font-weight-bold text-white mb-0">
                 Pirelli
               </h6>
@@ -26,7 +26,7 @@ class Header extends Component {
                 &nbsp;
               </h6>
             </div>
-            <div class="d-flex justify-content-between col-3 p-0">
+            <div className="d-flex justify-content-between col-3 p-0">
               <p className="makeLead text-white h6">P Zero</p>
               <p className="makeLead text-white font-weight-bold h6 mb-0">
                 WINTER

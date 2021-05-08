@@ -1,0 +1,17 @@
+.sidebar {
+  width: 12rem;
+}
+
+#list-tab > a:active,
+#list-tab > a:focus,
+#list-tab > a:hover {
+  background-color: #418ef6;
+}
+.list-group-item.active {
+  border-color: #418ef6;
+}
+
+.list-group-item {
+  background-color: #dee1e3;
+  border-color: #dee1e3;
+}

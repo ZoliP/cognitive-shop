@@ -7,8 +7,6 @@ class Search extends Component {
     super(props);
   }
   render() {
-    const { ProductList } = this.props;
-    console.log({ ProductList });
     return (
       <div className="container search">
         <nav className="navbar navbar-expand-lg navbar-light bg-white">
