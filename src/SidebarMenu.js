@@ -7,59 +7,74 @@ class SidebarMenu extends Component {
     const { ProductStock } = this.props;
     return (
       <div className="container">
-        <div className="d-flex">
+        <nav className="navbar navbar-expand-lg navbar-light p-0 d-flex align-items-start">
+          {/* Toggler/collapsibe Button  */}
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#colapsibleSidebar"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
           {/* Tab List */}
-          <div className="sidebar mr-3 ">
-            <div
-              className="list-group list-group-flush"
-              id="list-tab"
-              role="tablist"
-            >
-              <a
-                className="list-group-item list-group-item list-group-item-action "
-                id="list-pirelli-list"
-                data-toggle="list"
-                href="#pirelli"
-                role="tab"
-                aria-controls="pirelli"
+          <div className="collapse navbar-collapse" id="colapsibleSidebar">
+            <div className="sidebar mr-3" id="sidebar">
+              {/* Brand */}
+              <p className="selectedCategory list-group-item list-group-item-action">
+                Cars / Offroad Vehicles <br /> ATV
+              </p>
+              <div
+                className="list-group list-group-flush"
+                id="list-tab"
+                role="tablist"
               >
-                Pirelli
-              </a>
-              <a
-                className="list-group-item list-group-item-action"
-                id="list-michelin-list"
-                data-toggle="list"
-                href="#michelin"
-                role="tab"
-                aria-controls="michelin"
-              >
-                Michelin
-              </a>
-              <a
-                className="list-group-item list-group-item-action"
-                id="list-hankook-list"
-                data-toggle="list"
-                href="#hankook"
-                role="tab"
-                aria-controls="hankook"
-              >
-                Hankook
-              </a>
-              <a
-                className="list-group-item list-group-item-action"
-                id="list-goodyear-list"
-                data-toggle="list"
-                href="#goodyear"
-                role="tab"
-                aria-controls="goodyear"
-              >
-                Goodyear
-              </a>
+                <a
+                  className="list-group-item list-group-item list-group-item-action "
+                  id="list-pirelli-list"
+                  data-toggle="list"
+                  href="#pirelli"
+                  role="tab"
+                  aria-controls="pirelli"
+                >
+                  Pirelli
+                </a>
+                <a
+                  className="list-group-item list-group-item-action"
+                  id="list-michelin-list"
+                  data-toggle="list"
+                  href="#michelin"
+                  role="tab"
+                  aria-controls="michelin"
+                >
+                  Michelin
+                </a>
+                <a
+                  className="list-group-item list-group-item-action"
+                  id="list-hankook-list"
+                  data-toggle="list"
+                  href="#hankook"
+                  role="tab"
+                  aria-controls="hankook"
+                >
+                  Hankook
+                </a>
+                <a
+                  className="list-group-item list-group-item-action"
+                  id="list-goodyear-list"
+                  data-toggle="list"
+                  href="#goodyear"
+                  role="tab"
+                  aria-controls="goodyear"
+                >
+                  Goodyear
+                </a>
+              </div>
             </div>
           </div>
           {/* Tab content */}
 
-          <div className="col-10 p-0">
+          <div className="col-10 p-0 ">
             <div className="tab-content" id="nav-tabContent">
               <div
                 className="tab-pane fade show active"
@@ -70,7 +85,7 @@ class SidebarMenu extends Component {
                 <h3 className="text-uppercase h3 text-dark font-weight-bold m-3">
                   Pirelli
                 </h3>
-                <div className="dropdown-divider bg-primary ml-2"></div>
+                <div className="dropdown-divider bg-primary ml-2  "></div>
                 <ProductList ProductStock={ProductStock} />
               </div>
               <div
@@ -111,7 +126,7 @@ class SidebarMenu extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </nav>
       </div>
     );
   }

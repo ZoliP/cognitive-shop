@@ -41,31 +41,31 @@
 [
     {
         "id": 1,
-        "userID": 1,
-        "productID": 3,
+        "userId": 1,
+        "productId": 3,
         "quantity": 4,
         "unitPriceExclVAT":  322.58,   
-        "VATAmount": 309.67,
+        "totalVATAmount": 309.67,
         "totalPriceWhitoutVAT": 1290.33,
         "totalPriceWhithVAT": 1600.00
     },
     {
         "id": 2,
-        "userID": 1,
-        "productID": 3,
+        "userId": 1,
+        "productId": 3,
         "quantity": 4,
         "unitPriceExclVAT":  322.58,   
-        "VATAmount": 309.67,
+        "totalVATAmount": 309.67,
         "totalPriceWhitoutVAT": 1290.33,
         "totalPriceWhithVAT": 1600.00
     },
     {
         "id": 3,
-        "userID": 1,
-        "productID": 3,
+        "userId": 1,
+        "productId": 3,
         "quantity": 4,
         "unitPriceExclVAT":  322.58,   
-        "VATAmount": 309.67,
+        "totalVATAmount": 309.67,
         "totalPriceWhitoutVAT": 1290.33,
         "totalPriceWhithVAT": 1600.00
     }

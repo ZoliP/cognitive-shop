@@ -89,8 +89,18 @@ class ProductCard extends Component {
           <h6 className="available h6 font-weight-bold mb-2 ml-2 ">
             {availability}
           </h6>
-          <button href="cart" className="addToCart btn btn-primary p-1">
-            <select className="font-weight-bold" id="quantity">
+          <button
+            href="cart"
+            className="addToCart btn btn-primary p-1"
+            type="submit"
+          >
+            <label for="tireNr"></label>
+            <select
+              id="tireNr"
+              name="tireNr"
+              className="font-weight-bold"
+              id="quantity"
+            >
               {numbersAvailable}
             </select>
             &nbsp;

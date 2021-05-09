@@ -25,8 +25,8 @@ class ProductList extends Component {
       );
     });
     return (
-      <div className="container p-3">
-        <div className="row">{list}</div>
+      <div className="container p-0">
+        <div className="row d-flex justify-content-around">{list}</div>
       </div>
     );
   }

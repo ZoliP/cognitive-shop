@@ -1,0 +1,16 @@
+#productNr {
+  width: 25%;
+  text-align: center;
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset 0px 0px 4px 0px rgba(43, 48, 61, 0.3);
+  border: none;
+}
+
+#itemRow {
+  border-bottom: 1px #f5f6f8 solid;
+}
+
+#itemRow:last-child {
+  border-bottom: 2px #418ef6 solid;
+}

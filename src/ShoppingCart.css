@@ -1,0 +1,18 @@
+th {
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  padding: 2px 0;
+}
+table tr th:first-child,
+table tr th:nth-child(2),
+table tr th:last-child {
+  border-left: none !important;
+  border-right: none !important;
+}
+
+tbody th,
+tbody td {
+  border: none !important;
+}
