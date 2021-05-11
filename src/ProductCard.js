@@ -44,7 +44,7 @@ class ProductCard extends Component {
     const numbersAvailable = this.availableStock(parseInt(stock));
     const availability = this.isAvailable(parseInt(stock));
     return (
-      <div className="productCard card cards m-2">
+      <div className="productCard card cards m-2 p-3">
         <div className="card-body p-0 pt-3">
           <div className="d-flex justify-content-between align-items-baseline p-0">
             <h5 className="card-title font-weight-bold h5 m-0 ">{make}</h5>
