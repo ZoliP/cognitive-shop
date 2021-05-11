@@ -1,0 +1,45 @@
+.progressBar {
+  width: auto;
+  height: 2px;
+  background-color: #418ef6;
+}
+
+.checkoutSteps {
+  margin-top: -20px;
+}
+
+.progress col-4 {
+  margin-top: -1px;
+}
+
+span {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+.send {
+  background-color: #418ef6;
+  color: #ffffff;
+  margin-bottom: 150px;
+}
+
+.steps {
+  border-radius: 30px;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 1px solid #418ef6;
+  color: #cccccc;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.billing .steps {
+  color: #000000;
+}
+.billing p,
+.delivery p,
+.payment p {
+  font-size: 0.8rem;
+  font-weight: bold;
+}

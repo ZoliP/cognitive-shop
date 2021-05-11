@@ -2,9 +2,12 @@ import React, { Component } from "react";
 import CartItem from "./CartItem";
 import "./ShoppingCart.css";
 class ShoppingCart extends Component {
-  state = {};
+  constructor(props) {
+    super(props);
+  }
   render() {
-    const cartContent = this.props.Cart.map((item) => {
+    const { Cart, deleteItem } = this.props;
+    const cartContent = Cart.map((item) => {
       return (
         <CartItem
           userId={item.userId}
@@ -16,31 +19,57 @@ class ShoppingCart extends Component {
           totalPriceWhitoutVAT={item.totalPriceWhitoutVAT}
           totalVATAmount={item.totalVATAmount}
           unitPriceExclVAT={item.unitPriceExclVAT}
+          deleteItem={deleteItem}
         />
       );
     });
-    console.log(cartContent);
     return (
-      <div className="container">
-        <h4 className="h4 font-weight-bold text-dark">
+      <div className="container w-75">
+        <h4 className="h4 font-weight-bold text-dark mt-5 ml-5">
           Shopping cart summary:
         </h4>
         <table className="table bg-light text-center align-items-center">
-          <thead className="">
+          <thead>
             <tr>
-              <th scope="col"></th>
-              <th scope="col">Product</th>
-              <th scope="col">Quantity</th>
-              <th scope="col">Unit price exclusive of VAT</th>
-              <th scope="col">VAT amount</th>
-              <th scope="col">Total without VAT</th>
-              <th scope="col">Total with VAT</th>
-              <th scope="col" className="font-weight-bold">
+              <th className="align-middle" scope="col"></th>
+              <th className="align-middle" scope="col">
+                Product
+              </th>
+              <th className="align-middle" scope="col">
+                Quantity
+              </th>
+              <th className="align-middle" scope="col">
+                Unit price exclusive of VAT
+              </th>
+              <th className="align-middle" scope="col">
+                VAT amount
+              </th>
+              <th className="align-middle" scope="col">
+                Total without VAT
+              </th>
+              <th className="align-middle" scope="col">
+                Total with VAT
+              </th>
+              <th className="align-middle font-weight-bold" scope="col">
                 Remove
               </th>
             </tr>
           </thead>
-          <tbody className="bg-white">{cartContent}</tbody>
+          <tbody className="bg-white">
+            {cartContent}
+            <tr>
+              <td></td>
+              <td
+                colSpan="4"
+                className=" total font-weight-bold text-secondary "
+              >
+                Total products
+              </td>
+              <td className="font-weight-bold "> 3788.99 RON</td>
+              <td className="font-weight-bold "> 4800.00 RON</td>
+              <td> </td>
+            </tr>
+          </tbody>
         </table>
       </div>
     );

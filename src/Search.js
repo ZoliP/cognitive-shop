@@ -7,44 +7,47 @@ class Search extends Component {
     super(props);
   }
   render() {
+    const { ProductStock } = this.props;
+    console.log("ProductStock from app/shoppingsite/search", { ProductStock });
     return (
       <div className="container search">
-        <nav className="navbar navbar-expand-lg navbar-light bg-white">
-          <a className="navbar-brand" href="#">
-            <img
-              id="searchLogo"
-              src={logo}
-              width="40"
-              height="40"
-              alt="logoS.png"
-            />
-          </a>
-          <div
-            className="collapse navbar-collapse"
-            id="navbarNavAltMarkup"
-          ></div>
-          <div className="input-group">
-            <input
-              type="text"
-              className="form-control font-italic"
-              placeholder="Search products"
-              required
-            />
-            <div className="input-group-append w-50">
-              <button
-                className="btn btn-primary font-weight-bold"
-                type="button"
-                id="button-search"
-              >
-                SEARCH
-              </button>
-            </div>
-          </div>
-          <ul className="navbar-nav">
+        <nav className="navbar navbar-expand-lg navbar-light bg-white p-0">
+          <>
+            <a className="navbar-brand" href="/home">
+              <img
+                id="searchLogo"
+                src={logo}
+                width="40"
+                height="40"
+                alt="logoS.png"
+              />
+            </a>
+
+            <form className="form-inline mr-auto" action="/" method="GET">
+              <div className="input-group w-100">
+                <input
+                  type="text"
+                  className="form-control font-italic"
+                  placeholder="Search products"
+                  required
+                />
+                <div className="input-group-append">
+                  <button
+                    className="btn btn-primary font-weight-bold"
+                    type="submit"
+                    id="button-search"
+                  >
+                    SEARCH
+                  </button>
+                </div>
+              </div>
+            </form>
+          </>
+          <ul className="navbar-nav ml-auto">
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle h5 mb-0 font-weight-bold"
-                href="#"
+                href="/"
                 id="navbarDropdown"
                 role="button"
                 data-toggle="dropdown"
@@ -55,10 +58,10 @@ class Search extends Component {
                 <i className="fa fa-angle-down"></i>
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item " href="#">
+                <a className="dropdown-item " href="/action1">
                   Action
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/action2">
                   Another action
                 </a>
               </div>
@@ -77,10 +80,10 @@ class Search extends Component {
                 <i className="fa fa-angle-down"></i>
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/action1">
                   Action
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/action2">
                   Another action
                 </a>
               </div>
@@ -101,9 +104,7 @@ class Search extends Component {
                 <i className="fa fa-angle-down"></i>
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="#">
-                  Number of products:
-                </a>
+                <p className="dropdown-item">Number of products:</p>
                 <div className="dropdown-divider"></div>
                 <a className="dropdown-item" href="/checkout">
                   <button

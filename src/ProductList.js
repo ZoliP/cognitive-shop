@@ -3,7 +3,8 @@ import "./ProductList.css";
 import ProductCard from "./ProductCard";
 class ProductList extends Component {
   render() {
-    const list = this.props.ProductStock.map((product) => {
+    const { ProductStock } = this.props;
+    const list = ProductStock.map((product) => {
       return (
         <ProductCard
           key={product.id}
@@ -24,6 +25,7 @@ class ProductList extends Component {
         />
       );
     });
+    console.log(list);
     return (
       <div className="container p-0">
         <div className="row d-flex justify-content-around">{list}</div>

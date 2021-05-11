@@ -9,11 +9,9 @@ class ProductCard extends Component {
     let str = [];
     for (let i = 1; i <= num; i++) {
       str.push(
-        <>
-          <option key={i} value={i}>
-            {i}
-          </option>
-        </>
+        <option value={i} key={i}>
+          {i}
+        </option>
       );
     }
     return str;
@@ -68,7 +66,7 @@ class ProductCard extends Component {
           </div>
           <div className="d-flex justify-content-start font-weight-bold p-0">
             <div className="fuelClass rounded d-flex justify-content-between align-items-center">
-              <img className="p-1 " src={fuel} alt="fuel.png" />
+              <img className="p-1" src={fuel} alt="fuel.png" />
               <p className="m-0">{fuelIndex} &nbsp;</p>
             </div>
             <div className="gripClass rounded d-flex justify-content-between align-items-center">
@@ -94,7 +92,7 @@ class ProductCard extends Component {
             className="addToCart btn btn-primary p-1"
             type="submit"
           >
-            <label for="tireNr"></label>
+            <label htmlFor="tireNr"></label>
             <select
               id="tireNr"
               name="tireNr"

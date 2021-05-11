@@ -22,7 +22,13 @@ class Header extends Component {
                 Pirelli
               </h6>
               <h6 className="make display-4 text-white mb-0">
-                <img className="p-0" src={winter} width="40" height="40"></img>
+                <img
+                  className="p-0"
+                  src={winter}
+                  width="40"
+                  height="40"
+                  alt="winter"
+                ></img>
                 &nbsp;
               </h6>
             </div>

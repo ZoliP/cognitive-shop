@@ -18,16 +18,12 @@ class CartItemDescription extends Component {
       fuelIndex,
       weatherIndex,
       noisIndex,
-      season,
-      stock,
-      price,
-      reducedPrice,
     } = this.props;
     return (
       <div className="cartItemCard card cards">
         <div className="">
           <div className="row">
-            <div className="col col-3">
+            <div className="col col-3 p-0">
               <h5 className="card-title font-weight-bold h5 m-0 ">
                 {make}Pirelli
               </h5>
@@ -35,10 +31,10 @@ class CartItemDescription extends Component {
             </div>
             <div className="col col-9">
               <div className="row">
-                <div className="col-6">
+                <div className="col-6 p-0">
                   <h6 className="font-weight-bold h6 m-0">{size}255/95/R16</h6>
                 </div>
-                <div className="col-3">
+                <div className="col-3 p-0">
                   <h6 className="h6 m-0">
                     {speedIndex}91&nbsp; {loadIndex}T&nbsp;
                   </h6>

@@ -16,3 +16,7 @@ tbody th,
 tbody td {
   border: none !important;
 }
+
+.total {
+  text-align: left;
+}

@@ -6,8 +6,8 @@
 }
 
 #symbols > .fuelClass,
-.gripClass,
-.noiseClass {
+#symbols > .gripClass,
+#symbols > .noiseClass {
   height: 21px;
 }
 
