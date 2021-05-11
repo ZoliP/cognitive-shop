@@ -85,7 +85,7 @@ class SidebarMenu extends Component {
                 <h3 className="text-uppercase h3 text-dark font-weight-bold m-3">
                   Pirelli
                 </h3>
-                <div className="dropdown-divider bg-primary ml-2  "></div>
+                <div className="dropdown-divider bg-primary ml-2"></div>
                 <ProductList ProductStock={ProductStock} />
               </div>
               <div

@@ -106,7 +106,7 @@ class Search extends Component {
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <p className="dropdown-item">Number of products:</p>
                 <div className="dropdown-divider"></div>
-                <a className="dropdown-item" href="/checkout">
+                <a className="dropdown-item" href="/ShoppingSite">
                   <button
                     className="btn btn-primary"
                     type="button"
